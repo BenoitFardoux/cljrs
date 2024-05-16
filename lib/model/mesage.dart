@@ -33,8 +33,6 @@ class Message {
   }
 
   set expediteur(User value) {
-    if (value != null) {
-      _expediteur = value;
+    _expediteur = value;
     }
-  }
 }
