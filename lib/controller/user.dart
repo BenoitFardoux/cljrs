@@ -1,3 +1,4 @@
+import 'package:flutter_application_5/model/mesage.dart';
 import 'package:flutter_application_5/model/user.dart';
 
 class UserController {
@@ -21,7 +22,9 @@ class UserController {
     users.add(User('Bertrand', 'Luc'));
   }
 
-
+  void addMessage(User user,Message message) {
+    user.addMessage(message);
+  }
   void addUser(lastName, firstName) async{
     User user = User(lastName, firstName);
     users.add(user);
